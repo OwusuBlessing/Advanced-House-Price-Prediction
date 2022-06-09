@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House prediction iowa US</title>
+</head>
+<body>
+    <h1>House price predictoion in Iowa,USA.</h1>
+    <h2>Find it.Tour it.Own it</h2>
+    <p> Are you willing to buy a house in Iowa,a Midwestern U.S.It's known for it 
+        landscape of rolling plains and cornfield.Kindly answer few questions to give us few information about your dream house and we are going to make a 
+        prediction of the price.
+
+    </p>
+    <p>Beging form filling.</p>
+    <form action="/predict" method="POST">
+        <h3>What type of dwelling is involved in the sale based on age and style</h3><br>
+        <select name="MSSubclass" id="MSSclas" required="required">
+        <option value="1-STORY 1946 & NEW ALL">1-STORY 1946 & NEWER ALL STYLES</option>
+        <option value="1-STORY 1945 & OLDER">1-STORY 1945 & OLDER</option>
+        <option value="1-STORY W/FINISHED ATTIC ALL">1-STORY W/FINISHED ATTIC ALL</option>
+        <option value="1-1/2 STORY-UNFINISHED ALL AGES">1-1/2 STORY UNFINISHED ALL AGES</option>
+        <option value="1- 1/2 STORY FINISHED ALL AGES">1-1/2 STORY FINISHED ALL AGES</option>
+        <option value="2-STORY 1946 & NEWER">2-STORY 1946 & NEWER</option>
+        <option value="2-STORY 1945 & OLDER">2-STORY 1945 & OLDER</option>
+        <option value="2-1/2 STORY ALL AGES">2-1/2 -STORY ALL AGES </option>
+
+        <option value="SPLIT OR MULTI-LEVEL">SPLIT OR MULTI-LEVEL</option>
+        <option value="SPLIT FOYER">SPLIT FOYER</option>
+        
+        <option value="DUPLEX - ALL STYLES AND AGES ">DUPLEX - ALL STYLES AND AGES </option>
+        
+        <option value="1-STORY PUD Planned unit development-1946 & NEWER">1-STORY PUD Planned unit development-1946 & NEWER</option>
+        <option value="1-1/2 STORY PUD -ALL AGES">1-1/2 STORY PUD -ALL AGES</option>
+        
+        <option value="2-STORY PUD-1946 & NEWER">2-STORY PUD-1946 & NEWER</option>
+        <option value="PUD-MULTILEVEL-INCL SPLIT LEV/FOYER">PUD-MULTILEVEL-INCL SPLIT LEV/FOYER</option>
+        <option value="2 FAMILY CONVERSION -ALL AGES">2 FAMILY CONVERSION -ALL AGES</option>
+        
+        </select>
+        <h3>Select the general zoning classification of the sale</h3>
+        <select name="MSZoning" id="MSZ" required="required">
+        <h3>Select the general zoning classification of the sale</h3>
+        
+    
+            <option value="Commercial">Commercial</option>
+            <option value="Floating Village Residential">Floating Village Residential</option>
+            <option value="Residential High Density">Residential High Density</option>
+            <option value="Residential Low Density">Residential Low Density</option>
+            <option value="Residential Medium Density " >Residential Medium Density </option>
+            </select>
+
+        <h3>Select physical locations within Ames city limits</h3>
+            <select name="Niegbourhood" id="nbh" required="required">
+                <option value="Blmngtn">Bloomington Heigts</option>
+                <option value="BrDale">Briardale</option>
+                <option value="Brkside">Brookside</option>
+                <option value="ClearCr">Clear Creek</option>
+                <option value="Collgcr">College Creek</option>
+                <option value="Crawfor">Crawford</option>
+                <option value="Edwards">Edwards</option>
+                <option value="Gilbert">Gilbert</option>
+                <option value="IDOT">Iowa DOT and Rail Road</option>
+                <option value="MeadowV">Meadow Village</option>
+                <option value="Mitchel">Mitchell</option>
+                <option value="NoRidge">Northridge</option>
+                <option value="Nwames">Northwest Ames</option>west Ames
+                <option value="OldTown">Oldtown</option>
+                <option value="SWISU">South & west of Iowa state university</option>
+                <option value="Sawyer">Sawyer</option>
+                <option value="SawyerW">Sawyer West</option>
+                <option value="Somerst">Somerset</option>
+                <option value="StoneBr">Stone Brook</option>
+                <option value="vnk">veenker</option>
+                <option value="timb">Timber Land</option>
+                <option value="Nridht">Northridge Height</option>
+                <option value="Names">North Ames</option>
+                </select>
+                 <h3>Rate the overall material and finish of the house</h3>
+                 <select name="OverallQual" id="overq" required="required">
+                     <option value="ten">Very excellent</option>
+                     <option value="nine">Excellent</option>
+                     <option value="eight"> Very Good</option>
+                     <option value="sev">Good</option>
+                     <option value="six">Above Average</option>
+                     <option value="five">Average</option>
+                     <option value="four">Below Average</option>
+                     <option value="three">Fair</option>
+                     <option value="two">poor</option>
+                     <option value="one">Very poor</option>
+                
+                  </select>
+                  <h3>Enter the difference in year sold and year remodelled if any </h3>
+                  <input name = "YearRemoAdd" id = "yearremodd" type="number">
+                  <h3>Pick roof style</h3>
+                  <select name="RoofStyle" id="rf" required="required">
+                       <option value="gable">Gable</option>
+                       <option value="Gamb">Gambrel(Barn)</option>
+                       <option value="Hip">Hip</option>
+                    </select>
+                  <h3>Evaluate the height of the basement</h3>
+                  <select name="BsmtQual" id="bstq" required="required">
+                      <option value="ex">Excellent (100+inches)</option>
+                      <option value="Gd">Good(90-99 inches)</option>
+                      <option value="TA">Typial (80-89 inches)</option>
+                      <option value="Fa">Fair(70-79 inches)</option>
+                      <option value="Po">poor(less than 70 inches) </option>
+                      <option value="NA">No basement</option>
+                  </select>
+                  <h3>What type of walkout or garden walls woulf you prefer?</h3>
+                  <select name="BsmtExposure" id="">
+                      <option value="gd">Good exposure</option>
+                      <option value="Av">Average exposure</option>
+                      <option value="mn">minimum exposure</option>
+                      <option value="No">No exposure</option>
+                      <option value="Na">No basement</option>
+                  </select>
+                  <h3>Heating quality and Condition</h3>
+                  <select name="HeatingQC" id="" required="required">
+                      <option value="Exc">Excellent</option>
+                      <option value="Good">Good</option>
+                      <option value="Ta">Average/Typical</option>
+                      <option value="Fair">Fair</option>
+                      <option value="poor">Poor</option>
+
+                  </select>
+                  <h3>Central air Conditioning</h3>
+                  <select name="CentraAir" id="">
+                      <option value="Y">Yes</option>
+                      <option value="N">NO</option>
+                  </select>
+                  <h3>Floor floor square feet</h3><input name="1stFlrSF" id = "1stflr" type="number">
+                  <h3>Above ground living area square feet</h3><input name="GrLivArea" id = "grliv" type="number">
+                  <h3>Basement full bathrooms (0,1,2 or 3)</h3> <input name ="BsmtFullBath" type="number" id = "bscfull">
+
+                 
+                </select>
+                <h3>Kitchen quality</h3>
+                <select name="kitcheQual" id="kitq" required="required" >
+                    <option value="Exce">Excellent</option>
+                    <option value="Goodd">Good</option>
+                    <option value="Tav">Average/Typical</option>
+                    <option value="fair">Fair</option>
+                    <option value="Poor">Poor</option>
+
+                </select>
+                
+                  <h3>Number of fireplaces(0,1,2 or 3)</h3>
+                   <input type="number" id = "firep" name="Fireplaces",required="required">
+                
+                   <h3>Fireplace quality</h3>
+                   <select name="FireplaceQu" id="fireQ" required="required">
+                    <option value="Exce">Excellent-exceptonal mansory fireplace</option>
+                    <option value="Goodd">Good-mansory fireplace in main level</option>
+                    <option value="Tav">Average-Prefabricated fireplace in basement</option>
+                    <option value="fair">Fair-fabricated fireplace in basement</option>
+                    <option value="Po">Poor-Ben Franlin stove</option>
+                    <option value="Na">No fireplace</option>
+                    </select>
+
+                    <h3>Garage location</h3>
+                    <select name="GarageType" id="grgType" required="required">
+                        <option value="2types">More than one type of garage</option>
+                        <option value="attchd">Attached home</option>
+                        <option value="Basment">Basement garage</option>
+                        <option value="builtIn">built-in (Garage part of house - typically has room
+                            above garage</option>
+                        <option value="Carpot">Car port</option>
+                        <option value="Detchd">Detached from home</option>
+                        <option value="NA">No garage</option>
+
+                    </select>
+                    <h3>Interior finish of the garage</h3>
+                    <select name="GarageFinish" id="grgfinish" required="required">
+                        <option value="Fin">Finished</option>
+                        <option value="RF">Rough Finished</option>
+                        <option value="UF">Unfinished</option>
+                        <option value="NA">No garage</option>
+                    
+                        
+                    </select>
+                    <h3>Size of garage in car capacity(0,1,2,3 or 4)</h3>
+                    <input type="number" id = "firep" name="GarageCars">
+                    <h3>Paved driveaway</h3>
+                    <select name="PavedDrive" id="pvd" required="required">
+                        <option value="Y">Paved</option>
+                        <option value="P">Partial pavement</option>
+                        <option value="N">Dirt/Gravel</option>
+                    </select>
+                    <h3>Condition of sale</h3>
+                    <select name="SaleCondition" id="scnd" required="required">
+                        <option value="normal">Normal Sale</option>
+                        <option value="Abnormal">Abnormal Sale -trade,foreclosure,short sale</option>
+                            <option value="adjland">Adjoining Land Purchase</option>
+                            <option value="alloca">Allocation-two linked properties with separate deeds,typically
+                                 condo with garage unit</option>
+                                 <option value="Family">Sale between family and members</option>
+                                 <option value="Partial">Home was not completed when last assessed 
+                                     (associated with New Homes)</option>
+                                    </select>
+                                     <br><br><button id="sub" type="submit">Calculate the price of the house</button>
+                    <br><br>
+
+  
+  
+                    </form>
+                    <br><br><h3>{{ prediction_text}}</h3>
+        
+    
+</body>
+</html>
